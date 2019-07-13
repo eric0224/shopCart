@@ -1,0 +1,155 @@
+.dropdown .dd {
+  display: none;
+}
+.kill {
+  position: absolute;
+     top: 40px;
+    left: 180px;
+    border-left: 1px solid #c81623;
+    padding-left: 5px;
+}
+.nav {
+   line-height: 45px;
+   height: 45px;
+   overflow: hidden;
+}
+.nav li {
+   float: left;
+}
+.list-nav-l li {
+   margin: 0 28px;
+}
+.list-nav-l li a {
+   color: #000;
+   font-size: 16px;
+   font-weight: 700;
+}
+.nav a:hover {
+  text-decoration: underline;
+}
+.list-nav-r li {
+  margin: 0 22px;
+}
+.list-nav-r {
+  line-height: 50px;
+}
+.list-nav-r li a {
+  font-size: 14px;
+  color: #666;
+}
+/*main开始啦*/
+.shoes {
+  height: 120px;
+
+}
+.goods-list-item {
+  float: left;
+  height: 458px;
+  width: 288px;
+  border: 1px solid #fff;
+  margin: 10px 10px 0 0;
+}
+.goods-list-item:hover {
+  border: 1px solid #c81623;
+}
+.item-img {
+  text-align: center;
+  height: 250px;
+  line-height: 250px;
+}
+.item-img > img {
+  vertical-align: middle;
+}
+.item-title {
+  height: 76px;
+}
+.item-title,
+.item-price,
+.sold {
+  width: 265px;
+  margin: 10px  auto;
+}
+.now {
+  font-size: 22px;
+  color: #c81623;
+  margin-right: 10px;
+}
+.item-price s {
+  color: #aaa;
+  font-size: 14px;
+}
+.sold i, 
+.sold  em {
+   color: #c81623;
+}
+.scroll {
+  display: inline-block;
+  position: relative;
+  width: 128px;
+  height: 8px;
+  border: 1px solid #c81623;
+  padding: 1px;
+  vertical-align: middle;
+  border-radius: 5px;
+}
+.per {
+  position: absolute;
+  top: 1px;
+  left: 0;
+  width: 50%;
+  height: 8px;
+  background-color: #c81623;
+}
+.buy {
+  display: block;
+  height: 53px;
+  background-color: #b1191a;
+  text-align: center;
+  line-height: 50px;
+  font-size: 20px;
+  color: #fff;
+}
+/*分页的制作*/
+.page {
+  text-align: center;
+  margin: 20px 0;
+}
+.page li {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #ccc;
+  line-height: 30px;
+  cursor: pointer;
+}
+.page li:hover {
+  background-color: #eee;
+}
+.page .prev,
+.page .next {
+  width: 80px;
+}
+.page ul,
+.total {
+  display: inline-block;
+}
+.total input {
+  border: 1px solid #ccc;
+  height: 30px;
+  width: 40px;
+  transition: all .5s;
+}
+/*这个input 获得了焦点*/
+.total input:focus {
+  width: 80px;
+  border: 1px solid skyblue;
+}
+.total button {
+  height: 30px;
+  width: 40px;
+  border: 1px solid #ccc;
+  background-color: #eee;
+  cursor: pointer;
+}
+
+

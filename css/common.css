@@ -1,0 +1,432 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.clearfix:after {
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+body {
+    margin: 0;
+    background-color: #fff;
+    color: #333;
+    font-size: 12px;
+    font-family: tahoma, arial, 'Hiragino Sans GB', 'Microsoft Yahei', \5b8b\4f53, sans-serif;
+    line-height: 18px;
+}
+
+li {
+    list-style: none;
+}
+
+/*解决图片底册有空白缝隙*/
+img {
+    vertical-align: top;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+a:hover {
+    color: #e82633;
+}
+
+em,
+i {
+    font-style: normal !important;
+}
+
+input,
+button {
+    outline: none;
+    border: 0;
+}
+
+@font-face {
+    font-family: 'icomoon';
+    src: url('../fonts/icomoon.eot?7kkyc2');
+    src: url('../fonts/icomoon.eot?7kkyc2#iefix') format('embedded-opentype'),
+        url('../fonts/icomoon.ttf?7kkyc2') format('truetype'),
+        url('../fonts/icomoon.woff?7kkyc2') format('woff'),
+        url('../fonts/icomoon.svg?7kkyc2#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.icomoon {
+    font-family: 'icomoon';
+}
+
+.w {
+    width: 1200px;
+    margin: auto;
+}
+
+/*文字排版、颜色*/
+
+.f12 {
+    font-size: 12px
+}
+
+.f13 {
+    font-size: 13px
+}
+
+.nav-top {
+    border-bottom: 2px solid #b1191a;
+}
+
+/*shortcut部分*/
+.shortcut {
+    height: 31px;
+    background-color: #f1f1f1;
+    line-height: 31px;
+}
+
+.shortcut li {
+    float: left;
+    position: relative;
+}
+
+.cw-icon {
+    padding-right: 15px;
+}
+
+.style-red {
+    color: #c81623;
+}
+
+/* 小竖线 */
+.spacer {
+    width: 1px;
+    height: 10px;
+    background-color: #333;
+    margin: 11px 12px 0;
+}
+
+/*行内元素尽量不要给上下的内外边距*/
+.arrow {
+    position: absolute;
+    top: -3px;
+    right: -3px;
+    font-family: 'icomoon';
+    font-size: 15px;
+
+}
+
+/*header 开始*/
+.header {
+    position: relative;
+    height: 105px;
+    /*background-color: pink;*/
+}
+
+.logo {
+    position: absolute;
+    top: 26px;
+    left: 0;
+    width: 171px;
+    height: 61px;
+}
+
+.logo h1 {
+    margin: 0;
+}
+
+.logo a {
+    display: block;
+    width: 171px;
+    height: 61px;
+    background: url(../img/logo.png) no-repeat;
+    text-indent: -99999px;
+    overflow: hidden;
+}
+
+.search {
+    position: absolute;
+    top: 25px;
+    left: 345px;
+    background-color: purple;
+}
+
+.search input {
+    width: 444px;
+    height: 32px;
+    border: 2px solid #f10215;
+    padding-left: 10px;
+    float: left;
+}
+
+.search button {
+    float: left;
+    width: 60px;
+    height: 36px;
+    background-color: #f10215;
+    font-family: 'icomoon';
+    font-size: 20px;
+    color: #fff;
+    /* 鼠标变成小手 */
+    cursor: pointer;
+}
+
+.hotwords {
+    position: absolute;
+    top: 66px;
+    left: 345px;
+}
+
+.hotwords a {
+    margin: 0 10px;
+}
+
+/*shopcar*/
+.shopcar {
+    position: absolute;
+    top: 25px;
+    right: 60px;
+    width: 138px;
+    height: 34px;
+    background-color: #f7f7f7;
+    border: 1px solid #dfdfdf;
+    text-align: center;
+    line-height: 34px;
+}
+
+.car {
+    color: #f12510;
+    margin-right: 5px;
+}
+
+.arr {
+    display: inline-block;
+    font-size: 18px;
+    /*经常和 行内块搭配使用*/
+    vertical-align: middle;
+    margin-top: -3px;
+}
+
+.count {
+    position: absolute;
+    top: -5px;
+    /*有待考究*/
+    left: 100px;
+    height: 14px;
+    background-color: #f12510;
+    padding: 0 4px;
+    font-size: 12px;
+    line-height: 14px;
+    color: #fff;
+    /*border-radius: 7px 0;*/
+    /*左上  右下 是 圆角   剩下2个是直角*/
+    border-radius: 7px 7px 7px 0;
+}
+
+/*nav bufen*/
+.nav {
+    height: 45px;
+    /*background-color: pink;*/
+}
+
+.dropdown {
+    position: relative;
+    width: 210px;
+    height: 45px;
+
+}
+
+.dropdown .dt {
+    height: 45px;
+    background-color: #b1191a;
+    font-size: 14px;
+    color: #fff;
+    line-height: 45px;
+    text-align: center;
+}
+
+/*标题的加粗  链接的下划线 颜色  必须要单独制定样式*/
+.dropdown .dt h3 {
+    font-weight: 400;
+}
+
+.dropdown .dd {
+    position: absolute;
+    left: 0;
+    top: 47px;
+    width: 100%;
+    height: 467px;
+    background-color: #c81623;
+    /*隐藏起来*/
+    /*display: none;*/
+
+}
+
+.cate_menu_item {
+    height: 31px;
+    line-height: 31px;
+    padding: 0 12px;
+    margin-left: 2px;
+    /*就这么简单*/
+    transition: all 0.3s;
+}
+
+.cate_menu_item:hover {
+    background-color: #fff;
+    padding-left: 20px;
+}
+
+.cate_menu_item a {
+    color: #fff;
+    font-size: 14px;
+}
+
+.cate_menu_item:hover a {
+    color: #c81623;
+}
+
+.nav-group-item {
+    float: left;
+    margin-left: 40px;
+    position: relative;
+}
+
+.nav-group-item a {
+    display: block;
+    height: 45px;
+    line-height: 45px;
+    font-size: 16px;
+}
+
+.dragon {
+    position: absolute;
+    top: -3px;
+    left: 17px;
+    width: 42px;
+    height: 15px;
+    background-color: #F60000;
+    border-radius: 5px 5px 5px 0;
+    text-align: center;
+    line-height: 15px;
+    color: #fff;
+    font-size: 12px;
+}
+
+/*底部开始*/
+.footer {
+    height: 415px;
+    background-color: #f5f5f5;
+}
+
+.mod_service {
+    height: 55px;
+    padding: 27px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.mod_service_item {
+    width: 186px;
+    height: 50px;
+    float: left;
+    margin-left: 50px;
+}
+
+.sprite1,
+.icon {
+    background: url(../img/icons.png) no-repeat;
+}
+
+.mod_service_zheng {
+    width: 50px;
+    height: 50px;
+    background-position: -252px -3px;
+}
+
+.mod_service_ji {
+    width: 50px;
+    height: 50px;
+    background-position: -254px -53px;
+}
+
+.mod_service_tit {
+    margin-left: 4px;
+}
+
+.mod_service_tit h5 {
+    font-size: 14px;
+    margin: 4px 0
+}
+
+.mod_service_tit p {
+    color: #666;
+}
+
+.mod_help {
+    padding-top: 20px;
+    height: 169px;
+    border-bottom: 1px solid #ccc;
+}
+
+.mod_help_list {
+    width: 160px;
+    padding-left: 40px;
+    float: left;
+}
+
+.mod_help_title {
+    height: 25px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.erweima {
+    margin: 10px 0 0 -10px;
+    width: 90px;
+    text-align: center;
+}
+
+.mod_copyright {
+    text-align: center;
+    padding-top: 15px;
+}
+
+.mod_copyright_links a {
+    margin: 0 5px;
+}
+
+.mod_copyright p {
+    margin-top: 10px;
+    line-height: 20px;
+}
+
+.disabled {
+    color: #abcd12;
+    /*鼠标禁用*/
+    cursor: not-allowed;
+}
+
+.mask {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(200, 25, 25, 0.6);
+}

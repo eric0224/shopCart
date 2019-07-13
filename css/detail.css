@@ -1,0 +1,330 @@
+.dropdown .dd {
+  display: none;
+}
+
+.main {
+  margin-top: 25px;
+}
+
+.crumb-wrap li {
+  float: left;
+  margin-right: 15px;
+}
+
+/*产品介绍*/
+.product-intro {}
+
+/*放大镜预览模块*/
+.preview-wrap {
+  width: 400px;
+}
+
+.preview-img {
+  position: relative;
+  width: 398px;
+  height: 398px;
+  border: 1px solid #ccc;
+}
+
+.preview-img img {
+  width: 100%;
+}
+
+.mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 298px;
+  height: 298px;
+  border: 1px solid #ccc;
+  background: rgba(255, 255, 0, 0.3);
+  /*鼠标变成移动样式效果*/
+  cursor: move;
+  display: none;
+}
+
+.preview-list {
+  position: relative;
+  height: 60px;
+  margin-top: 60px;
+}
+
+.arrow-prev,
+.arrow-next {
+  position: absolute;
+  top: 15px;
+}
+
+.arrow-prev {
+  left: 0;
+}
+
+.arrow-next {
+  right: 0;
+}
+
+.list-item {
+  width: 320px;
+  height: 60px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.list-item img {
+  border: 1px solid #fff;
+}
+
+.list-item img:hover {
+  border: 1px solid #c81623;
+}
+
+.list-item ul {
+  width: 400px;
+}
+
+.list-item li {
+  float: left;
+  margin: 2px;
+}
+
+.itemInfo-wrap {
+  width: 720px;
+}
+
+.sku-name {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.news {
+  color: red;
+  margin: 10px 0;
+}
+
+.summary-price {
+  position: relative;
+  background-color: #fee9eb;
+  padding: 20px 0;
+}
+
+.summary .dt {
+  width: 70px;
+  float: left;
+  text-align: center;
+}
+
+.summary .dd {
+  float: left;
+  color: #666;
+}
+
+.summary-price em {
+  font-size: 24px;
+  color: #e12228;
+}
+
+.summary-price i {
+  color: #e12228;
+  margin-left: 15px;
+}
+
+.remark {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+
+}
+
+.summary-support {
+  padding: 10px 0;
+}
+
+.summary-stock {
+  padding: 10px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.choose {
+  margin-top: 20px;
+}
+
+.choose-item {
+  margin: 5px 0;
+}
+
+.choose-color {
+  display: inline-block;
+  width: 80px;
+  text-align: center;
+  line-height: 40px;
+  border-top: 1px solid #eee;
+  border-left: 1px solid #eee;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+
+.current {
+  border: 1px solid #c81623;
+}
+
+.choose-color:hover {
+  background-color: #eee;
+}
+
+.item-color {
+  line-height: 40px;
+}
+
+.choose-btns {
+  margin-top: 30px;
+}
+
+.choose-style {
+  display: inline-block;
+  padding: 0 15px;
+  line-height: 30px;
+  box-shadow: 2px 2px 0px rgba(0, 0, 0, .1)
+}
+
+.choose-amount {
+  display: inline-block;
+  position: relative;
+  width: 50px;
+  height: 44px;
+
+}
+
+.choose-amount input {
+  width: 33px;
+  height: 42px;
+  border: 1px solid #ccc;
+  text-align: center;
+  line-height: 48px;
+}
+
+.add,
+.reduce {
+  position: absolute;
+  right: 0;
+  width: 14px;
+  height: 20px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+.reduce {
+  bottom: 0;
+  height: 21px;
+}
+
+.addshopcar {
+  display: inline-block;
+  width: 142px;
+  background-color: #c81623;
+  text-align: center;
+  line-height: 46px;
+  color: #fff;
+  font-size: 16px;
+  margin-left: 15px;
+}
+
+.addshopcar:hover {
+  color: #fff;
+  background-color: #9d0611;
+}
+
+.aside {
+  width: 208px;
+  border: 1px solid #ccc;
+}
+
+.product-detail {
+  margin-top: 50px;
+}
+
+.aside .tab-list {
+  height: 34px;
+  background-color: purple;
+}
+
+.aside .tab-list li {
+  float: left;
+  background-color: #f1f1f1;
+  text-align: center;
+  line-height: 33px;
+  width: 103px;
+  border-left: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  cursor: pointer;
+}
+
+.aside .tab-list .active {
+  background-color: #fff;
+  border-left: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  color: #c81623;
+}
+
+.aside .tab-content {
+  padding: 0 10px;
+}
+
+.aside .tab-con-item li {
+  float: left;
+  line-height: 28px;
+  width: 85px;
+  padding-left: 5px;
+  border-bottom: 1px dashed #ccc;
+}
+
+.tab-con-pro {
+  border-bottom: 1px solid #ccc;
+}
+
+.addcar {
+  display: block;
+  width: 88px;
+  height: 20px;
+  margin: 20px auto;
+  background-color: #eee;
+  border: 1px solid #ccc;
+  text-align: center;
+  line-height: 20px;
+}
+
+.detail {
+  width: 978px;
+}
+
+.detail .tab-list {
+  height: 38px;
+  border: 1px solid #ccc;
+  background-color: #eee;
+  line-height: 38px;
+}
+
+.detail .tab-list li {
+  float: left;
+  padding: 0 20px;
+  cursor: pointer;
+}
+
+.detail .tab-list .active {
+  background-color: #c81623;
+  color: #fff;
+}
+
+.tab-con-img {
+  text-align: center;
+}
+
+.big {
+  border: 1px solid #000;
+  width: 600px;
+  height: 600px;
+  position: absolute;
+  left: 400px;
+  top: 0;
+  /* display: none; */
+  z-index: 998;
+}

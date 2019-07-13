@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.clearfix:after {
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+.clearfix{
+    *zoom: 1;
+}
+input,
+button {
+    outline: none;
+    border: 0;
+}
+body {
+    margin: 0;
+    background-color: #fff;
+    color: #333;
+    font-size: 12px;
+    font-family: tahoma, arial, 'Hiragino Sans GB', 'Microsoft Yahei', \5b8b\4f53, sans-serif;
+    line-height: 18px;
+}
+li {
+    list-style: none;
+}
+/*解决图片底册有空白缝隙*/
+img {
+    vertical-align: top;
+}
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+a {
+    text-decoration: none;
+    color: #333;
+}
+a:hover {
+    color: #e82633;
+}
+.w {
+    width: 1200px;
+    margin: auto;
+}
+.header {
+    height: 80px;
+    border-bottom: 2px solid #c81623;
+}
+.logo {
+    /*孩子 如果有了定位或者浮动 脱标了，则就不会引起外边距塌陷的问题了、*/
+    float: left;
+    margin-top: 15px;
+
+}
+.registerarea {
+    height: 520px;
+    border: 1px solid #ccc;
+    margin-top: 20px;
+}
+.registerarea h3 {
+    height: 40px;
+    line-height: 40px;
+    padding: 0 20px;
+    background-color: #ececec;
+    border-bottom: 1px solid #ccc;
+    font-weight: 400;
+
+}
+.registerarea h3 a {
+    color: #c81623;
+}
+.reg-form {
+    width: 600px;
+    margin: 50px auto 0;
+}
+.reg-form li {
+    margin-bottom: 20px;
+}
+.reg-form  label {
+     display: inline-block;
+     width: 90px;
+     text-align: right;
+}
+.reg-form  input {
+     width: 238px;
+     height: 34px;
+     border: 1px solid #ccc;
+}
+.default {
+    color: #ccc;
+    margin-left: 10px;
+}
+.error {
+    color: #c81623;
+}
+.default img {
+    vertical-align: middle;
+    margin-top: -2px;
+}
+.success {
+    color: #40b83f;
+}
+.safe {
+    text-align: right;
+    padding-right: 265px;
+    color: #ccc;
+}
+.safe em {
+    padding: 0 10px;
+    font-style: normal;
+    color: #fff;
+    margin-left: 1px;
+}
+.ruo {
+    background-color: #de1111;
+}
+.zhong {
+    background-color: #f79100;
+}
+.qiang {
+    background-color: #40b83f;
+}
+.reg-form .check {
+    width: 15px;
+    height: 15px;
+    vertical-align: middle;
+    margin-left: 100px;
+}
+.ole  button {
+    width: 200px;
+    height: 34px;
+    background-color: #c81623;
+    color:#fff;
+    cursor: pointer;
+    margin-left: 80px;
+
+}
+.footer {
+    margin-top: 20px;
+    height: 100px;
+    text-align: center;
+    line-height: 28px;
+}

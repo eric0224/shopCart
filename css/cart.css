@@ -1,0 +1,90 @@
+.empty-tip {
+    padding: 60px 0;
+    background-color:#fff4e8;
+    font-size: 30px;
+}
+.empty-tip > a {
+    color: #c81623;
+    margin: 0 10px;
+    font-size: 40px;
+}
+
+.pd10 {
+    padding-left: 10px;
+}
+.cart-header{
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+.cart-header > .row {
+    border: 1px solid #aaa;
+}
+.row {
+    display: flex;
+    background-color: #fff4e8;
+}
+.cell {
+    padding: 15px 10px;
+}
+.col-1{
+    flex: 1;
+}
+.col-4 {
+    flex: 4;
+}
+
+.item-list{
+    border-top: 1px solid #aaa;
+    padding-bottom: 40px;
+}
+.item {
+    border-top: 1px solid #aaa;
+}
+.item-list img {
+    width: 100%;
+}
+.item > .row {
+    height: 100px;
+}
+.tc {
+    text-align: center;
+}
+.lh70 {
+    line-height: 70px;
+}
+.item-count {
+    line-height: 20px;
+    text-align: center;
+}
+.item-count > .reduce,.item-count > .add {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #aaa;
+}
+.item-count > .number {
+    width: 60px;
+    height: 20px;
+    border-top: 1px solid #aaa;
+    border-bottom: 1px solid #aaa;
+    text-align: center;
+}
+.hidden {
+    display: none;
+}
+.total-money,.selected {
+    color:#E2231A;
+    font-size: 20px;
+}
+.total-of .row {
+    line-height: 36px;
+}
+.total-of .settlement {
+    float: right;
+    width: 120px;
+    height: 40px;
+    background-color: rgb(224, 28, 28);
+    line-height: 40px;
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
+}

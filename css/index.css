@@ -1,0 +1,222 @@
+/*mian start*/
+.main {
+  width: 980px;
+  height: 457px;
+  margin-left: 210px;
+  padding: 10px 0 0 10px;
+}
+.focus {
+  position: relative;
+  width: 721px;
+  height: 455px;
+}
+.focus-prev,
+.focus-next {
+  position: absolute;
+  top: 50%;
+  margin-top: -20px;
+  width: 24px;
+  height: 40px;
+  background-color: rgba(0,0,0,.2);
+  font-family: 'icomoon';
+  font-size: 18px;
+  color: #fff;
+  /*鼠标变成小手*/
+  cursor: pointer;
+}
+.focus-prev {
+  left: 0;
+}
+.focus-next {
+  right: 0;
+}
+
+.pager {
+   position: absolute;
+   left:20%;
+   bottom: 15px;
+ 
+}
+.pager-item {
+    float: left;
+   width: 8px;
+   height: 8px;
+   border: 1px solid #fff;
+   margin: 0 5px;
+   border-radius: 50%;
+   cursor: pointer;
+}
+.pager-item .current {
+  background-color: #fff;
+}
+.newsflash {
+  width: 250px;
+  height: 455px;
+}
+.news {
+  height: 163px;
+  border: 1px solid #ccc;
+}
+.news-hd {
+  height: 32px;
+  line-height: 32px;
+  border-bottom: 1px dotted #ccc;
+  padding: 0 15px;
+}
+.news-bd {
+  padding: 2px 0 0 15px;
+}
+.news-bd li {
+
+  height: 25px;
+  line-height: 25px;
+}
+.lifeservice {
+  height: 208px;
+  border: 1px solid #ccc;
+  border-top: 0;
+/*  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;*/
+  overflow: hidden;
+}
+.lifeservice ul {
+  width: 252px;
+}
+.lifeservice li {
+  float: left;
+  width: 62px;
+  height: 70px;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  text-align: center;
+}
+.icon {
+  display: block;
+  width: 24px;
+  height: 24px;
+  background-position: -17px -16px;
+  margin: 10px auto ;
+}
+.game .icon {
+  background-position: -206px -16px;
+}
+.ad {
+  margin-top: 6px;
+}
+/*展示专区*/
+.show {
+  margin: 10px 0 20px 0;
+}
+.recommend {
+  height: 163px;
+  background-color: #ebebeb;
+}
+.time {
+  height: 100%;
+  width: 200px;
+  background-color: #5c5251;
+  text-align: center;
+}
+.time  img {
+  margin: 28px 0 10px 0;
+}
+.time  h3 {
+  color: #fff;
+  font-size: 18px;
+  /*font-weight: normal;*/
+  /*我们更提倡用数值*/
+  font-weight: 400;
+}
+.recommend-r {
+  padding: 10px 0;
+}
+.recommend-r img {
+  width: 100%;
+  height: 100%;
+}
+.recommend-r li {
+  float: left;
+  width: 249px;
+  height: 143px;
+  border-right: 1px solid #ddd;
+}
+.recommend-r .last {
+  border-right: 0;
+}
+.floor-hd {
+  height: 38px;
+  line-height: 38px;
+  border-bottom: 2px solid #c81623;
+}
+.floor-bd img {
+  transition: all 0.2s;
+}
+.floor-bd img:hover {
+  margin-left: 3px;
+}
+
+.floor-hd h3{
+   float: left;
+   color:#c81623;
+   font-size: 18px;
+   font-weight: 400;
+}
+.tab-list {
+  float: right;
+}
+.tab-list li {
+  float: left;
+  /*padding: 0 15px;*/
+  /*border-right: 1px solid #999;
+  line-height: 12px;
+  margin-top: 13px;*/
+
+}
+.tab-list .current a {
+    color: #c81623 ;
+}
+.tab-list li a {
+  margin:0  12px;
+}
+.floor-bd {
+  height: 360px;
+  /*background-color: purple;*/
+}
+.tab-content img {
+  width: 100%;
+}
+.row-210 {
+  width: 210px;
+  overflow: hidden;
+}
+.row-330 {
+  width: 330px;
+  overflow: hidden;
+}
+.row-220 {
+  width: 219px;
+  border-right: 1px solid #ededed;
+  overflow: hidden;
+}
+.row-210-top {
+  padding: 10px 5px 0 15px;
+  margin-bottom: 3px;
+  overflow: hidden;
+}
+.row-210-top  li {
+  float: left;
+  width: 85px;
+  height: 30px;
+  line-height: 30px;
+  border-bottom: 1px solid #ededed;
+  text-align: center;
+  margin-right: 10px;
+}
+.tab-content-top {
+  border-bottom: 1px solid #ededed;
+}
+.floor-bd {
+  overflow: hidden;
+}
+
