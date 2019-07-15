@@ -1,9 +1,9 @@
-$(()=>{
+$(() => {
     // 将本地数据读取到购物车页面
-    let arr=loadData('shopCartData');
-    let html='';
+    let arr = loadData('shopCartData');
+    let html = '';
     arr.forEach(e => {
-        html+=`<div class="item" data-id="6">
+        html += `<div class="item" data-id="6">
         <div class="row">
           <div class="cell col-1 row">
             <div class="cell col-1">
@@ -29,7 +29,7 @@ $(()=>{
           </div>
           <div class="cell col-1 tc lh70">
             <span>￥</span>
-            <em class="computed">${e.price*e.number}</em>
+            <em class="computed">${e.price * e.number}</em>
           </div>
           <div class="cell col-1">
             <a href="javascript:void(0);" class="item-del">从购物车中移除</a>
@@ -43,5 +43,14 @@ $(()=>{
     $('.total-of').removeClass('hidden');
 
 
-    
+    // 全选与不全选
+    $('.pick-all').on('change', function () {
+        $('.item-ck ,.pick-all').prop('checked', $(this).prop('checked'));
+    })
+    $('.item-ck').on('change', function () {
+        let status = $('.item-ck:checked').length === $('.item-ck').length;
+        $('.pick-all').prop('checked', status);
+    })
+
+
 })
