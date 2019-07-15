@@ -3,7 +3,7 @@ $(() => {
     let arr = loadData('shopCartData');
     let html = '';
     arr.forEach(e => {
-        html += `<div class="item" data-id="6">
+        html += `<div class="item" data-id="${e.pID}">
         <div class="row">
           <div class="cell col-1 row">
             <div class="cell col-1">
@@ -46,11 +46,35 @@ $(() => {
     // 全选与不全选
     $('.pick-all').on('change', function () {
         $('.item-ck ,.pick-all').prop('checked', $(this).prop('checked'));
+        getSum();
     })
     $('.item-ck').on('change', function () {
         let status = $('.item-ck:checked').length === $('.item-ck').length;
         $('.pick-all').prop('checked', status);
+        getSum();
     })
+    
 
+
+    // 计算总数量和总金额
+    function getSum(){
+        let count=0;
+        let money=0;
+        $('.item-list input[type="checkbox"]:checked').each((i,e)=>{
+            let id=parseInt($(e).parents('.item').attr('data-id'));
+            console.log(id);
+            arr.forEach(e => {
+                if(e.pID==id){
+                    count+=e.number;
+                    money+=e.price*e.number;
+                }
+            });
+        })
+        $('.selected').text(count);
+        $('.total-money').text(money);
+    }
+    getSum();
+
+    
 
 })
