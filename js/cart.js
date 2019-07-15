@@ -41,4 +41,7 @@ $(()=>{
     $('.empty-tip').hide();
     $('.cart-header').removeClass('hidden');
     $('.total-of').removeClass('hidden');
+
+
+    
 })

@@ -30,4 +30,28 @@ $(() => {
         saveData('shopCartData', arr);
         location.href = "cart.html";
     })
+
+    // 点击加号
+    let count;
+    $('.choose-btns .add').on('click', function () {
+        count = $('.choose-number').val();
+        count++;
+        if (count > 1) {
+            $('.reduce').removeClass('disabled');
+        }
+        $('.choose-number').val(count);
+    })
+
+    // 点击减号
+    $('.choose-btns .reduce').on('click', function () {
+        count = $('.choose-number').val();
+        if (count > 1) {
+            count--;
+        }
+        if (count <= 1) {
+            $('.reduce').addClass('disabled');
+        }
+        $('.choose-number').val(count);
+
+    })
 })
